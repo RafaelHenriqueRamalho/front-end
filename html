@@ -1,0 +1,134 @@
+DOCTYPE.html
+
+<html>
+    <head>
+         <meta charset="utg-8">
+         <title>SGCM</title>
+         <link rel="stylesheet" href="Estilo.css">
+    
+    
+    
+    </head>
+    <body>
+         <header>
+           <div id="logo" >
+            <span>SCGM</span>
+              
+        </div>
+             <div>
+                <div id="usuarioInfo">
+                <span>Usuarios: Administrador (admin)</span>
+                <span>Papel: ADMIN</span>
+                <button type="button">Logout</button>
+             </div>
+            
+         </header>
+         <nav>
+             <ul>
+                 <li><a href="agenda.html">agenda</a></li>
+                 <li><a href="exames.html">exames</a></li>
+                 <li><a href="profissionais.html">profissionais</a></li>
+                 <li><a href="convenios.html">convenios</a></li>
+                 <li><a href="unidades.html">unidades</a></li>
+                 <li><a href="especialidades.html">especialidades</a></li>
+                 <li><a href="usuarios.html">usuarios</a></li>
+                 <li><a href="atendimento.html">atendimento</a></li>
+             </ul>
+         </nav>
+         <main>
+             <div>
+                 ERRO!
+             </div>
+             <div>
+                 SUCESSO!
+             </div>
+             <form action="a" method="get">
+                 <input type="hidden" name="id">
+                 <label for="nomeCompleto">Nome</label>
+                 <input type="text" name="nomeCompleto" id="nomeCompleto">
+                 <label for="nomeUsuario">Usuario</label>
+                 <input type="text" name="nomeUsuario" id="nomeUsuario" required>
+                 <label for="Senha">Senha</label>
+                 <input type="password" name="Senha" id="Senha">
+                 <label for="ativo">ativo</label>
+                 <input type="checkbox" name="ativo" id="aitvo">
+                 <label for="papel">Papel</label>
+                 <select name="papel" id="papel" required>
+                    <option value=""></option>
+                    <option value="USUARIO">USUARIO</option>
+                     <option value="ADMIN">ADMIN</option>
+                 </select>
+                 <input type="submit" valu="Enviar">
+             </form>
+            <div id="comandos">
+                <button type="button">Adicionar</button>
+                <input type="texte" name="busca" id="busca" placeholder="Digite para pesquisar">
+            </div>
+             <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Usuario</th>
+                        <th>Ativo</th>
+                        <th>Papel</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Administrador</td>
+                        <td>admin</td>
+                        <td>Sim</td>
+                        <td>ADMIN</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rafael</td>
+                        <td>rafael</td>
+                        <td>Sim</td>
+                        <td>USUARIO</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paulo</td>
+                        <td>paulo</td>
+                        <td>Não</td>
+                        <td>USUARIO</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            Total de registros: 3
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+         </main>
+         <footer>
+             <span>
+                 SCGM - Sistema de Gerenciamento de Clínica Médica
+                </span>
+             <span>Suporte técnico: (68) 5555-5555 | 
+                 E-mail: 
+                 <a href="milto:suporte.scg@ufac.br">
+                 suporte.scg@ufac.br
+             </a>
+            </span>
+         </footer>
+
+    </boby>
